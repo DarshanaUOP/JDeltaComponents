@@ -6,7 +6,8 @@ import javax.swing.*;
 */
 public class JDeltaBadgeHolder extends JFrame {
     /* Constructor of the class */
+    private JDeltaBadge myJDeltaBadge;
     public JDeltaBadgeHolder(){
-
+        myJDeltaBadge = new JDeltaBadge("Sample","New");
     }
 }
