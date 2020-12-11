@@ -9,5 +9,6 @@ public class JDeltaBadgeHolder extends JFrame {
     private JDeltaBadge myJDeltaBadge;
     public JDeltaBadgeHolder(){
         myJDeltaBadge = new JDeltaBadge("Sample","New");
+        add(myJDeltaBadge);
     }
 }
