@@ -2,6 +2,6 @@ package com.deltaApps;
 
 import javax.swing.*;
 
-public class jDeltaBadge extends JPanel {
+public class JDeltaBadge extends JPanel {
 
 }
