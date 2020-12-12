@@ -1,10 +1,12 @@
 package JDeltaColors;
 
+import com.deltaApps.JDeltaColors.JDeltaColor;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class JDeltaColorsUI extends JFrame {
-    com.deltaApps.colors.JDeltaColor jDeltaColor;
+    JDeltaColor jDeltaColor;
 
     JPanel panLeft,panTop,panRight,panSouth;
     JPanel middlePan;
@@ -55,8 +57,7 @@ public class JDeltaColorsUI extends JFrame {
         /* midpanRight with INFO color */
         midpanSouth = new JPanel();
         midpanSouth.setBackground(jDeltaColor.DARK);
-        middlePan.add(midpanSouth,BorderLayout.SOUTH);
-
+        middlePan.add(midpanSouth,BorderLayout.CENTER);
 
     }
 }
