@@ -1,6 +1,7 @@
 package com.deltaApps;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public class JDeltaBadge extends JPanel {
@@ -18,12 +19,14 @@ public class JDeltaBadge extends JPanel {
 
     // TODO - Please get this colors from anywhere
     /* Color : Blue */
-    private Color color = new Color(0,123,255);
+    private Color colorBlue = new Color(0,123,255);
     /* Color : white */
     private Color colorWhite = new Color(255,255,255);
     /* Color : black */
     private Color colorBlack = new Color(0,0,0);
 
+    /* GridBag Constraints */
+    GridBagConstraints gb = new GridBagConstraints();
 
     /* This is the constructor of the class, it needs primary text and secondary test */
     public JDeltaBadge(String primaryText,String secondaryText){
@@ -32,7 +35,8 @@ public class JDeltaBadge extends JPanel {
 
         // TODO - Please change this layout later
         /* set layout as FlowLayout */
-        this.setLayout(new FlowLayout());
+        //this.setLayout(new GridBagLayout());
+        setLayout(new FlowLayout());
 
         /* create objects for panels */
         primaryPanel = new JPanel();
@@ -53,7 +57,7 @@ public class JDeltaBadge extends JPanel {
         /** Change panel properties
          */
         /* set colors for components */
-        primaryPanel.setBackground(color);
+        primaryPanel.setBackground(colorBlue);
         secondaryPanel.setBackground(colorWhite);
 
         /* add text appended labels into panels */
@@ -61,10 +65,19 @@ public class JDeltaBadge extends JPanel {
         secondaryPanel.add(secondaryLabel);
 
         /* add panels to the badge panel */
+        /* gb.gridx = 0;
+        gb.gridy = 0;
+        gb.gridwidth = 3;
+        add(primaryPanel,gb); */  /* Adding primary panel */
         add(primaryPanel);
+
+        /* gb.gridx = gb.gridwidth + 1;
+        gb.gridy = 1;
+        add(secondaryPanel,gb); */ /* Adding secondary panel */
         add(secondaryPanel);
 
         /* change this JDeltaBadge background color */
-        this.setBackground(color);
+        this.setBackground(colorBlue);
+        setBorder(new EmptyBorder(10, 10, 10, 10));
     }
 }
