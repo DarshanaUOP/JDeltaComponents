@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9458c0da-5a9b-43cc-80e4-4387eacf5678" name="Default Changelist" comment="" />
+    <list default="true" id="9458c0da-5a9b-43cc-80e4-4387eacf5678" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/deltaApps/Run_JDeltaBadge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadgeHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deltaApps/JDeltaBadgeHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadgeRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadgeRun.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +47,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Run_JDeltaBadge">
     <configuration name="JDeltaBadgeRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.deltaApps.JDeltaBadgeRun" />
       <module name="Badges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.deltaApps.*" />
+          <option name="PATTERN" value="JDeltaBadge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run_JDeltaBadge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDeltaBadge.Run_JDeltaBadge" />
+      <module name="Badges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDeltaBadge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -56,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Run_JDeltaBadge" />
         <item itemvalue="Application.JDeltaBadgeRun" />
       </list>
     </recent_temporary>

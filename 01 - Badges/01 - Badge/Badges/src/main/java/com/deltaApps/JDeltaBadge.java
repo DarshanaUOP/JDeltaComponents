@@ -32,6 +32,7 @@ public class JDeltaBadge extends JPanel {
     GridBagConstraints gb = new GridBagConstraints();
 
     /* This is the constructor of the class, it needs primary text and secondary test */
+    // TODO - Use Constructor chaining for different parameter case (Constructor overloading)
     public JDeltaBadge(String primaryText,String secondaryText){
         this.primaryText = primaryText;
         this.secondaryText = secondaryText;

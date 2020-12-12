@@ -1,4 +1,6 @@
-package com.deltaApps;
+package JDeltaBadge;
+
+import com.deltaApps.JDeltaBadge;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,6 +18,7 @@ public class JDeltaBadgeHolder extends JFrame {
     /* Constructor of the class */
     public JDeltaBadgeHolder(){
         setLayout(new FlowLayout());
+        //TODO - Check methods coming from JPanel (Ex. add() method)
         myJDeltaBadge = new JDeltaBadge("Sample","New");
         add(myJDeltaBadge);
 
