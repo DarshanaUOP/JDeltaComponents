@@ -8,5 +8,7 @@
     <artifactId>Delta-Apps</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- packaging as .jar-->
+    <packaging>jar</packaging>
 
 </project>
