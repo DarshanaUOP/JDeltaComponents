@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9458c0da-5a9b-43cc-80e4-4387eacf5678" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/deltaApps/Run_JDeltaBadge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadgeHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deltaApps/JDeltaBadgeHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadgeRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadgeRun.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
