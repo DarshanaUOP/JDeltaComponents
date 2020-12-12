@@ -11,8 +11,8 @@ public class JDeltaColor extends Color{
     /* Primary */
     public final static com.deltaApps.colors.JDeltaColor PRIMARY = new com.deltaApps.colors.JDeltaColor(0,123, 255);
 
-    /* INDIGO */
-    public final static com.deltaApps.colors.JDeltaColor INDIGO = new com.deltaApps.colors.JDeltaColor(108,117,125);
+    /* SECONDARY */
+    public final static com.deltaApps.colors.JDeltaColor SECONDARY = new com.deltaApps.colors.JDeltaColor(108,117,125);
 
     /* SUCCESS */
     public final static com.deltaApps.colors.JDeltaColor SUCCESS = new com.deltaApps.colors.JDeltaColor(40,167,69);
