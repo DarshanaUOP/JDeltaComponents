@@ -4,6 +4,9 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
+/**
+ * Owner : Darshana Ariyarathna. 2020-12-11
+ */
 public class JDeltaBadge extends JPanel {
     /* to keep primary and secondary values */
     private String primaryText,secondaryText;
