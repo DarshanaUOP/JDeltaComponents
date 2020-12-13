@@ -36,6 +36,18 @@ public class JDeltaBadge extends JPanel {
     /* This is the constructor of the class, it needs primary text and secondary test */
     // TODO - Use Constructor chaining for different parameter case (Constructor overloading)
     public JDeltaBadge(String primaryText,String secondaryText){
+        this(primaryText,secondaryText,JDeltaColor.PRIMARY);
+    }
+
+    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor){
+        this(primaryText,secondaryText,JDeltaColor.PRIMARY,JDeltaColor.DARK);
+    }
+
+    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor){
+        this(primaryText,secondaryText,JDeltaColor.PRIMARY,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S);
+    }
+
+    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor,JDeltaFonts fontSize){
         this.primaryText = primaryText;
         this.secondaryText = secondaryText;
 
@@ -86,14 +98,4 @@ public class JDeltaBadge extends JPanel {
         this.setBackground(colorBlue);
         setBorder(new EmptyBorder(10, 10, 10, 10));
     }
-
-    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor){
-
-    }
-
-    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor){
-
-    }
-
-    
 }
