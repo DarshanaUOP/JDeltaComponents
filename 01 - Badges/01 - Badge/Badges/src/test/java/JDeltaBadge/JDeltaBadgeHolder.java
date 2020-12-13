@@ -1,6 +1,7 @@
 package JDeltaBadge;
 
 import com.deltaApps.JDeltaBadge.JDeltaBadge;
+import com.deltaApps.JDeltaColors.JDeltaColor;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,7 +23,7 @@ public class JDeltaBadgeHolder extends JFrame {
         myJDeltaBadge = new JDeltaBadge("Sample","New");
         add(myJDeltaBadge);
 
-        jDeltaBadge2 = new JDeltaBadge("Notifications","4");
+        jDeltaBadge2 = new JDeltaBadge("Notifications","4", JDeltaColor.WARNING);
         add(jDeltaBadge2);
     }
 }

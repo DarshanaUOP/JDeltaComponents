@@ -1,7 +1,7 @@
 package com.deltaApps.JDeltaBadge;
 
 import com.deltaApps.JDeltaColors.JDeltaColor;
-import com.deltaApps.JDeltaFonts;
+import com.deltaApps.JDeltaFont.JDeltaFonts;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -41,14 +41,19 @@ public class JDeltaBadge extends JPanel {
     }
 
     public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor){
-        this(primaryText,secondaryText,JDeltaColor.PRIMARY,JDeltaColor.DARK);
+        this(primaryText,secondaryText,backgroundColor,JDeltaColor.DARK);
     }
+    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor,JDeltaFonts fontSize){
+        this(primaryText,secondaryText,JDeltaColor.PRIMARY,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S);
+    }
+
 
     public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor){
-        //this(primaryText,secondaryText,JDeltaColor.PRIMARY,JDeltaColor.DARK, JDeltaFonts.JDELTA_FONTS_ARIAL_S);
+        this(primaryText,secondaryText,backgroundColor,JDeltaColor.DARK, JDeltaFonts.JDELTA_FONTS_ARIAL_S);
     }
 
-    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor,JDeltaFonts fontSize){
+    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,
+                       JDeltaColor foregroundColor,JDeltaFonts fontSize){
         this.primaryText = primaryText;
         this.secondaryText = secondaryText;
 
@@ -67,8 +72,8 @@ public class JDeltaBadge extends JPanel {
         /** Change label properties
          */
         /* set font for labels */
-        primaryLabel.setFont(font);
-        secondaryLabel.setFont(font2);
+        primaryLabel.setFont(fontSize);
+        secondaryLabel.setFont(fontSize);
         /* set label colors */
         primaryLabel.setForeground(colorWhite);
         secondaryLabel.setForeground(colorBlack);
@@ -76,7 +81,7 @@ public class JDeltaBadge extends JPanel {
         /** Change panel properties
          */
         /* set colors for components */
-        primaryPanel.setBackground(colorBlue);
+        primaryPanel.setBackground(backgroundColor);
         secondaryPanel.setBackground(colorWhite);
 
         /* add text appended labels into panels */
@@ -96,7 +101,7 @@ public class JDeltaBadge extends JPanel {
         add(secondaryPanel);
 
         /* change this JDeltaBadge background color */
-        this.setBackground(colorBlue);
+        this.setBackground(backgroundColor);
         setBorder(new EmptyBorder(10, 10, 10, 10));
     }
 }
