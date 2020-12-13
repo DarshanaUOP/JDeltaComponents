@@ -1,5 +1,7 @@
 package com.deltaApps;
 
+import com.deltaApps.JDeltaColors.JDeltaColor;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -84,4 +86,14 @@ public class JDeltaBadge extends JPanel {
         this.setBackground(colorBlue);
         setBorder(new EmptyBorder(10, 10, 10, 10));
     }
+
+    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor){
+
+    }
+
+    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor){
+
+    }
+
+    
 }
