@@ -1,6 +1,7 @@
-package com.deltaApps;
+package com.deltaApps.JDeltaBadge;
 
 import com.deltaApps.JDeltaColors.JDeltaColor;
+import com.deltaApps.JDeltaFonts;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -44,7 +45,7 @@ public class JDeltaBadge extends JPanel {
     }
 
     public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor){
-        this(primaryText,secondaryText,JDeltaColor.PRIMARY,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S);
+        //this(primaryText,secondaryText,JDeltaColor.PRIMARY,JDeltaColor.DARK, JDeltaFonts.JDELTA_FONTS_ARIAL_S);
     }
 
     public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor,JDeltaFonts fontSize){

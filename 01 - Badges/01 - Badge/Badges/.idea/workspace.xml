@@ -44,7 +44,7 @@
       <module name="Badges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JDeltaBadge.*" />
+          <option name="PATTERN" value="com.deltaApps.JDeltaBadge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,7 +57,7 @@
       <module name="Badges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JDeltaBadge.*" />
+          <option name="PATTERN" value="com.deltaApps.JDeltaBadge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

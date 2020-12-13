@@ -1,6 +1,6 @@
 package JDeltaBadge;
 
-import com.deltaApps.JDeltaBadge;
+import com.deltaApps.JDeltaBadge.JDeltaBadge;
 
 import javax.swing.*;
 import java.awt.*;
