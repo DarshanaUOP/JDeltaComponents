@@ -1,4 +1,4 @@
-package com.deltaApps;
+package com.deltaApps.JDeltaFont;
 
 import java.awt.*;
 
