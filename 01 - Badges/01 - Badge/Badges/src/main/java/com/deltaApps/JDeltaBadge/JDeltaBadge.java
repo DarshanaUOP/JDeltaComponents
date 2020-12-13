@@ -44,12 +44,12 @@ public class JDeltaBadge extends JPanel {
         this(primaryText,secondaryText,backgroundColor,JDeltaColor.DARK);
     }
     public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor,JDeltaFonts fontSize){
-        this(primaryText,secondaryText,JDeltaColor.PRIMARY,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S);
+        this(primaryText,secondaryText,backgroundColor,JDeltaColor.DARK,fontSize);
     }
 
 
     public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor){
-        this(primaryText,secondaryText,backgroundColor,JDeltaColor.DARK, JDeltaFonts.JDELTA_FONTS_ARIAL_S);
+        this(primaryText,secondaryText,backgroundColor,foregroundColor, JDeltaFonts.JDELTA_FONTS_ARIAL_S);
     }
 
     public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,
@@ -75,8 +75,8 @@ public class JDeltaBadge extends JPanel {
         primaryLabel.setFont(fontSize);
         secondaryLabel.setFont(fontSize);
         /* set label colors */
-        primaryLabel.setForeground(colorWhite);
-        secondaryLabel.setForeground(colorBlack);
+        primaryLabel.setForeground(foregroundColor);
+        secondaryLabel.setForeground(foregroundColor);
 
         /** Change panel properties
          */

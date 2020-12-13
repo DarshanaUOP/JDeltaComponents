@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9458c0da-5a9b-43cc-80e4-4387eacf5678" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadge/JDeltaBadge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/deltaApps/JDeltaBadge/JDeltaBadge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JDeltaBadge/JDeltaBadgeHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JDeltaBadge/JDeltaBadgeHolder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
