@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9458c0da-5a9b-43cc-80e4-4387eacf5678" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +37,10 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.Run_JDeltaBadge">
-    <configuration name="JDeltaBadgeRun" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven.jdeltabadges [clean,validate,compile...]">
+    <configuration name="JDeltaBadgeRun" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.deltaApps.JDeltaBadgeRun" />
       <module name="Badges" />
       <extension name="coverage">
@@ -58,7 +60,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jdeltabadges [clean]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="jdeltabadges [clean,validate,compile...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -70,6 +72,10 @@
             <option name="goals">
               <list>
                 <option value="clean" />
+                <option value="validate" />
+                <option value="compile" />
+                <option value="package" />
+                <option value="deploy" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -86,12 +92,11 @@
     <list>
       <item itemvalue="Application.JDeltaBadgeRun" />
       <item itemvalue="Application.Run_JDeltaBadge" />
-      <item itemvalue="Maven.jdeltabadges [clean]" />
+      <item itemvalue="Maven.jdeltabadges [clean,validate,compile...]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Run_JDeltaBadge" />
-        <item itemvalue="Application.JDeltaBadgeRun" />
       </list>
     </recent_temporary>
   </component>
@@ -120,5 +125,16 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/JDeltaBadge/Run_JDeltaBadge.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
