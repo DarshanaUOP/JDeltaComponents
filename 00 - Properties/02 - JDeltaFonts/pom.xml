@@ -6,8 +6,9 @@
 
     <groupId>com.deltaApps</groupId>
     <artifactId>jdeltafont</artifactId>
-    <version>1.0.2a</version>
+    <version>1.0.2a1</version>
     <packaging>jar</packaging>
+    <name>jDeltaFonts</name>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
