@@ -40,7 +40,8 @@ public class JDeltaBadge extends JPanel {
         this(primaryText,secondaryText,JDeltaColor.PRIMARY);
     }
 
-    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor){
+    public JDeltaBadge(String primaryText, String secondaryText,
+                       JDeltaColor backgroundColor){
         this(primaryText,secondaryText,backgroundColor,JDeltaColor.DARK);
     }
     public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor,JDeltaFonts fontSize){
