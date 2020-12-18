@@ -50,6 +50,18 @@ public class JDeltaBadge extends JPanel {
     }
 
     /**
+     * This will create a basic components with light primary background and dark primary fonts
+     * with a dark secondary fonts and light secondary background
+     * @param primaryText Text to write as primary text
+     * @param amount A integer number to write as secondary text
+     */
+    public JDeltaBadge(String primaryText,
+                       int amount){
+        this(primaryText,String.valueOf(amount),JDeltaColor.LIGHT,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
+                JDeltaColor.DARK,JDeltaColor.LIGHT,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
+    }
+
+    /**
      * This will create a custom colored secondary badge
      * @param primaryText Text to write as primary text
      * @param secondaryText Text to write as primary text
@@ -61,6 +73,20 @@ public class JDeltaBadge extends JPanel {
                        JDeltaColor secondaryForegroundColor,
                        JDeltaColor secondaryBackgroundColor){
         this(primaryText,secondaryText,JDeltaColor.DARK,JDeltaColor.LIGHT,secondaryForegroundColor,secondaryBackgroundColor);
+    }
+
+    /**
+     * This will create a custom colored secondary badge
+     * @param primaryText Text to write as primary text
+     * @param amount A integer number to write as secondary text
+     * @param secondaryForegroundColor Secondary font color
+     * @param secondaryBackgroundColor Secondary background color
+     */
+    public JDeltaBadge(String primaryText,
+                       int amount,
+                       JDeltaColor secondaryForegroundColor,
+                       JDeltaColor secondaryBackgroundColor){
+        this(primaryText,String.valueOf(amount),JDeltaColor.DARK,JDeltaColor.LIGHT,secondaryForegroundColor,secondaryBackgroundColor);
     }
 
     /**
