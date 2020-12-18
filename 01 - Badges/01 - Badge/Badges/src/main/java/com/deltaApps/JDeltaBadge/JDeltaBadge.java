@@ -21,10 +21,6 @@ public class JDeltaBadge extends JPanel {
     /* GridBag Constraints */
     GridBagConstraints gb = new GridBagConstraints();
 
-    /* This is the constructor of the class, it needs primary text and secondary test */
-
-    
-
     /**
      * This will create a basic components with light primary background and dark primary fonts
      * with a dark secondary fonts and light secondary background
@@ -158,5 +154,71 @@ public class JDeltaBadge extends JPanel {
 
         /* change this JDeltaBadge background color */
         setBackground(primaryBackgroundColor);
+    }
+
+    /* getters and setters */
+    /**
+     * get primary text from the jDeltaBadge
+     * @return primary text of the jDeltaBadge
+     */
+    public String getPrimaryText() {
+        return primaryText;
+    }
+
+    /**
+     * Can update your jDeltaButton's primary text
+     * @param primaryText New primary text
+     */
+    public void setPrimaryText(String primaryText) {
+        this.primaryText = primaryText;
+    }
+
+    /**
+     * get secondary text from the jDeltaBadge
+     * @return secondary text of the jDeltaBadge
+     */
+    public String getSecondaryText() {
+        return secondaryText;
+    }
+
+    /**
+     * Can update your jDeltaButton's secondary text
+     * @param secondaryText New secondary text
+     */
+    public void setSecondaryText(String secondaryText) {
+        this.secondaryText = secondaryText;
+    }
+
+    /**
+     * get primary's foreground color
+     * @return primary's foreground color
+     */
+    public JDeltaColor getPrimaryForegroundColor(){
+        return (JDeltaColor) this.primaryLabel.getForeground();
+    }
+
+    /**
+     * this will update your primary foreground color
+     * @param primaryForegroundColor new primary foreground color
+     */
+    public void setPrimaryForegroundColor(JDeltaColor primaryForegroundColor){
+        this.primaryLabel.setForeground((Color) primaryForegroundColor);
+    }
+
+    /**
+     * get primary's background color
+     * @return primary's background color
+     */
+    public JDeltaColor getPrimaryBackgroundColor(){
+        return (JDeltaColor) this.primaryLabel.getBackground();
+    }
+
+    /**
+     * update primary's background color
+     * @param primaryBackgroundColor primary's background color
+     */
+    public void setPrimaryBackgroundColor(JDeltaColor primaryBackgroundColor){
+        this.primaryLabel.setBackground((Color) primaryBackgroundColor);
+        this.primaryPanel.setBackground((Color) primaryBackgroundColor);
     }
 }
