@@ -1,6 +1,7 @@
 package JDeltaBadge;
 
 import com.deltaApps.JDeltaBadge.JDeltaBadge;
+import com.deltaApps.JDeltaColors.JDeltaColor;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +14,7 @@ import java.awt.*;
 */
 public class JDeltaBadgeHolder extends JFrame {
     /* get jDeltaBadge Component */
-    private JDeltaBadge myJDeltaBadge, jDeltaBadgeNotification,jDeltaBadge3;
+    private JDeltaBadge jDeltaBadgeNotification, jDeltaBadgeCustomSecondary;
 
     /* Constructor of the class */
     public JDeltaBadgeHolder(){
@@ -22,5 +23,8 @@ public class JDeltaBadgeHolder extends JFrame {
 
         jDeltaBadgeNotification = new JDeltaBadge("Notifications","2");
         add(jDeltaBadgeNotification);
+
+        jDeltaBadgeCustomSecondary = new JDeltaBadge("Massages","5", JDeltaColor.LIGHT,JDeltaColor.DANGER);
+        add(jDeltaBadgeCustomSecondary);
     }
 }
