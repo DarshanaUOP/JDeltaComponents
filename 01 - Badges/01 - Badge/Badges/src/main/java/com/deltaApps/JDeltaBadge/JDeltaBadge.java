@@ -19,7 +19,7 @@ public class JDeltaBadge extends JPanel {
     private JPanel primaryPanel,secondaryPanel;
 
     // TODO - Please get fonts from anywhere
-    /* fonts for the badge */
+    /** fonts for the badge */
     private Font font = new Font("Arial",Font.PLAIN,40);
     private Font font2 = new Font("Arial",Font.BOLD,30);
 
@@ -36,25 +36,31 @@ public class JDeltaBadge extends JPanel {
 
     /* This is the constructor of the class, it needs primary text and secondary test */
     // TODO - Use Constructor chaining for different parameter case (Constructor overloading)
-    public JDeltaBadge(String primaryText,String secondaryText){
-        this(primaryText,secondaryText,JDeltaColor.PRIMARY);
+
+    /* C1 */
+
+    /**
+     * his will create a basic components with light primary background and dark primary fonts
+     * with a dark secondary fonts and light secondary background
+     * @param primaryText
+     * @param secondaryText
+     */
+    public JDeltaBadge(String primaryText,
+                       String secondaryText){
+        this(primaryText,secondaryText,JDeltaColor.LIGHT,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,JDeltaColor.DARK,JDeltaColor.LIGHT,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
     }
 
-    public JDeltaBadge(String primaryText, String secondaryText,
-                       JDeltaColor backgroundColor){
-        this(primaryText,secondaryText,backgroundColor,JDeltaColor.DARK);
-    }
-    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor,JDeltaFonts fontSize){
-        this(primaryText,secondaryText,backgroundColor,JDeltaColor.DARK,fontSize);
-    }
-
-
-    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,JDeltaColor foregroundColor){
-        this(primaryText,secondaryText,backgroundColor,foregroundColor, JDeltaFonts.JDELTA_FONTS_ARIAL_S);
-    }
-
-    public JDeltaBadge(String primaryText, String secondaryText, JDeltaColor backgroundColor ,
-                       JDeltaColor foregroundColor,JDeltaFonts fontSize){
+    /* C11 */
+    public JDeltaBadge(String primaryText,
+                       String secondaryText,
+                       JDeltaColor primaryBackgroundColor,
+                       JDeltaColor primaryForegroundColor,
+                       JDeltaFonts primaryFont,
+                       JDeltaColor secondaryBackgroundColor,
+                       JDeltaColor secondaryForegroundColor,
+                       JDeltaFonts secondaryFont,
+                       boolean rounded
+                        ){
         this.primaryText = primaryText;
         this.secondaryText = secondaryText;
 
@@ -73,36 +79,27 @@ public class JDeltaBadge extends JPanel {
         /** Change label properties
          */
         /* set font for labels */
-        primaryLabel.setFont(fontSize);
-        secondaryLabel.setFont(fontSize);
+        primaryLabel.setFont(primaryFont);
+        secondaryLabel.setFont(secondaryFont);
         /* set label colors */
-        primaryLabel.setForeground(foregroundColor);
-        secondaryLabel.setForeground(foregroundColor);
+        primaryLabel.setForeground(primaryForegroundColor);
+        secondaryLabel.setForeground(secondaryForegroundColor);
 
         /** Change panel properties
          */
         /* set colors for components */
-        primaryPanel.setBackground(backgroundColor);
-        secondaryPanel.setBackground(colorWhite);
+        primaryPanel.setBackground(primaryBackgroundColor);
+        secondaryPanel.setBackground(secondaryBackgroundColor);
 
         /* add text appended labels into panels */
         primaryPanel.add(primaryLabel);
         secondaryPanel.add(secondaryLabel);
 
-        /* add panels to the badge panel */
-        /* gb.gridx = 0;
-        gb.gridy = 0;
-        gb.gridwidth = 3;
-        add(primaryPanel,gb); */  /* Adding primary panel */
         add(primaryPanel);
 
-        /* gb.gridx = gb.gridwidth + 1;
-        gb.gridy = 1;
-        add(secondaryPanel,gb); */ /* Adding secondary panel */
         add(secondaryPanel);
 
         /* change this JDeltaBadge background color */
-        this.setBackground(backgroundColor);
-        setBorder(new EmptyBorder(10, 10, 10, 10));
+        setBackground(primaryBackgroundColor);
     }
 }

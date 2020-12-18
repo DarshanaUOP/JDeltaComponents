@@ -1,8 +1,6 @@
 package JDeltaBadge;
 
 import com.deltaApps.JDeltaBadge.JDeltaBadge;
-import com.deltaApps.JDeltaColors.JDeltaColor;
-import com.deltaApps.JDeltaFont.JDeltaFonts;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,20 +13,14 @@ import java.awt.*;
 */
 public class JDeltaBadgeHolder extends JFrame {
     /* get jDeltaBadge Component */
-    private JDeltaBadge myJDeltaBadge,jDeltaBadge2,jDeltaBadge3;
+    private JDeltaBadge myJDeltaBadge, jDeltaBadgeNotification,jDeltaBadge3;
 
     /* Constructor of the class */
     public JDeltaBadgeHolder(){
         setLayout(new FlowLayout());
         //TODO - Check methods coming from JPanel (Ex. add() method)
-        myJDeltaBadge = new JDeltaBadge("Sample","New");
-        add(myJDeltaBadge);
 
-        jDeltaBadge2 = new JDeltaBadge("Notifications","4", JDeltaColor.WARNING);
-        add(jDeltaBadge2);
-
-        jDeltaBadge3 = new JDeltaBadge("Notifications","4", JDeltaColor.WARNING, JDeltaFonts.JDELTA_FONTS_ARIAL_L);
-        add(jDeltaBadge3);
-
+        jDeltaBadgeNotification = new JDeltaBadge("Notifications","2");
+        add(jDeltaBadgeNotification);
     }
 }
