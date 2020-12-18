@@ -112,7 +112,7 @@ public class JDeltaBadge extends JPanel {
                        JDeltaColor secondaryBackgroundColor,
                        JDeltaColor secondaryForegroundColor,
                        JDeltaFonts secondaryFont,
-                       boolean rounded
+                       boolean rounded /* TODO - Implement this  */
                         ){
         this.primaryText = primaryText;
         this.secondaryText = secondaryText;
@@ -219,7 +219,7 @@ public class JDeltaBadge extends JPanel {
      * @return primary's background color
      */
     public JDeltaColor getPrimaryBackgroundColor(){
-        return (JDeltaColor) this.primaryLabel.getBackground();
+        return (JDeltaColor) this.primaryPanel.getBackground();
     }
 
     /**
@@ -230,5 +230,40 @@ public class JDeltaBadge extends JPanel {
         this.primaryPanel.setBackground((Color) primaryBackgroundColor);
         this.setBackground((Color) primaryBackgroundColor);
     }
+
+    /////////////////////////////////////////////////////////////
+    /**
+     * get primary's foreground color
+     * @return primary's foreground color
+     */
+    public JDeltaColor getSecondaryForegroundColor(){
+        return (JDeltaColor) this.secondaryLabel.getForeground();
+    }
+
+    /**
+     * this will update your primary foreground color
+     * @param primaryForegroundColor new primary foreground color
+     */
+    public void setSecondaryForegroundColor(JDeltaColor primaryForegroundColor){
+        this.secondaryLabel.setForeground((Color) primaryForegroundColor);
+    }
+
+    /**
+     * get primary's background color
+     * @return primary's background color
+     */
+    public JDeltaColor getSecondaryBackgroundColor(){
+        return (JDeltaColor) this.secondaryPanel.getBackground();
+    }
+
+    /**
+     * update primary's background color
+     * @param primaryBackgroundColor primary's background color
+     */
+    public void setSecondaryBackgroundColor(JDeltaColor primaryBackgroundColor){
+        this.secondaryPanel.setBackground((Color) primaryBackgroundColor);
+    }
+
+
 
 }
