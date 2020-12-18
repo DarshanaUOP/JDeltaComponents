@@ -38,19 +38,24 @@ public class JDeltaBadge extends JPanel {
     // TODO - Use Constructor chaining for different parameter case (Constructor overloading)
 
     /**
-     * his will create a basic components with light primary background and dark primary fonts
+     * This will create a basic components with light primary background and dark primary fonts
      * with a dark secondary fonts and light secondary background
-     * @param primaryText
-     * @param secondaryText
+     * @param primaryText Text to write as primary text
+     * @param secondaryText Text to write as secondary text
      */
-    /* C1 */
     public JDeltaBadge(String primaryText,
                        String secondaryText){
         this(primaryText,secondaryText,JDeltaColor.LIGHT,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
                 JDeltaColor.DARK,JDeltaColor.LIGHT,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
     }
 
-    /* C6 */
+    /**
+     * This will create a custom colored secondary badge
+     * @param primaryText Text to write as primary text
+     * @param secondaryText Text to write as primary text
+     * @param secondaryForegroundColor Secondary font color
+     * @param secondaryBackgroundColor Secondary background color
+     */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
                        JDeltaColor secondaryForegroundColor,
@@ -58,7 +63,15 @@ public class JDeltaBadge extends JPanel {
         this(primaryText,secondaryText,JDeltaColor.DARK,JDeltaColor.LIGHT,secondaryForegroundColor,secondaryBackgroundColor);
     }
 
-    /* C8 */
+    /**
+     * You can create a more colorful badge
+     * @param primaryText Text to write as primary text
+     * @param secondaryText Text to write as secondary text
+     * @param primaryForegroundColor Primary font color
+     * @param primaryBackgroundColor Primary background color
+     * @param secondaryForegroundColor Secondary font color
+     * @param secondaryBackgroundColor Secondary background color
+     */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
                        JDeltaColor primaryForegroundColor,
@@ -69,7 +82,18 @@ public class JDeltaBadge extends JPanel {
                 secondaryBackgroundColor,secondaryForegroundColor,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
     }
 
-    /* C11 */
+    /**
+     * This will create a full flexible JDeltaButton for the user
+     * @param primaryText Text to write as primary text
+     * @param secondaryText Text to write as secondary text
+     * @param primaryBackgroundColor Primary font color
+     * @param primaryForegroundColor Primary font color
+     * @param primaryFont Primary font specifications
+     * @param secondaryBackgroundColor Secondary background color
+     * @param secondaryForegroundColor Secondary font color
+     * @param secondaryFont Secondary font specifications
+     * @param rounded is the JDeltaButton round in shape or not
+     */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
                        JDeltaColor primaryBackgroundColor,
