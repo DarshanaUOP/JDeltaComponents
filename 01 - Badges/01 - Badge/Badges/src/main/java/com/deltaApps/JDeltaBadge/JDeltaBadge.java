@@ -18,24 +18,12 @@ public class JDeltaBadge extends JPanel {
     /* jPanels for append labels */
     private JPanel primaryPanel,secondaryPanel;
 
-    // TODO - Please get fonts from anywhere
-    /** fonts for the badge */
-    private Font font = new Font("Arial",Font.PLAIN,40);
-    private Font font2 = new Font("Arial",Font.BOLD,30);
-
-    // TODO - Please get this colors from anywhere
-    /* Color : Blue */
-    private Color colorBlue = new Color(0,123,255);
-    /* Color : white */
-    private Color colorWhite = new Color(255,255,255);
-    /* Color : black */
-    private Color colorBlack = new Color(0,0,0);
-
     /* GridBag Constraints */
     GridBagConstraints gb = new GridBagConstraints();
 
     /* This is the constructor of the class, it needs primary text and secondary test */
-    // TODO - Use Constructor chaining for different parameter case (Constructor overloading)
+
+    
 
     /**
      * This will create a basic components with light primary background and dark primary fonts

@@ -24,7 +24,7 @@ public class JDeltaBadgeHolder extends JFrame {
         jDeltaBadgeNotification = new JDeltaBadge("Notifications","2");
         add(jDeltaBadgeNotification);
 
-        jDeltaBadgeCustomSecondary = new JDeltaBadge("Massages","5", JDeltaColor.LIGHT,JDeltaColor.DANGER);
+        jDeltaBadgeCustomSecondary = new JDeltaBadge("Massages","50+", JDeltaColor.LIGHT,JDeltaColor.DANGER);
         add(jDeltaBadgeCustomSecondary);
     }
 }
