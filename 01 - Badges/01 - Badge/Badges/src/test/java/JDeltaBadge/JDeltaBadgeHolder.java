@@ -29,11 +29,13 @@ public class JDeltaBadgeHolder extends JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 jDeltaBadgeNotification.setPrimaryBackgroundColor(JDeltaColor.DANGER);
+                jDeltaBadgeNotification.setSecondaryBackgroundColor(JDeltaColor.SECONDARY);
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
                 jDeltaBadgeNotification.setPrimaryBackgroundColor(JDeltaColor.WARNING);
+                jDeltaBadgeNotification.setSecondaryBackgroundColor(JDeltaColor.INFO);
             }
         });
         add(jDeltaBadgeNotification);
@@ -47,6 +49,15 @@ public class JDeltaBadgeHolder extends JFrame {
                 jDeltaBadgeCustomSecondary.setSecondaryText(clickCount);
             }
 
+            @Override
+            public void mousePressed(MouseEvent e) {
+                jDeltaBadgeCustomSecondary.setVisible(false);
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                jDeltaBadgeCustomSecondary.setVisible(true);
+            }
         });
         add(jDeltaBadgeCustomSecondary);
 
