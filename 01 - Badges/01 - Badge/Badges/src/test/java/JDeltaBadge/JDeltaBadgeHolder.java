@@ -25,10 +25,20 @@ public class JDeltaBadgeHolder extends JFrame {
         //TODO - Check methods coming from JPanel (Ex. add() method)
 
         jDeltaBadgeNotification = new JDeltaBadge("Notifications","2");
+        jDeltaBadgeNotification.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                jDeltaBadgeNotification.setPrimaryBackgroundColor(JDeltaColor.DANGER);
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                jDeltaBadgeNotification.setPrimaryBackgroundColor(JDeltaColor.WARNING);
+            }
+        });
         add(jDeltaBadgeNotification);
 
         jDeltaBadgeCustomSecondary = new JDeltaBadge("Massages","50+", JDeltaColor.LIGHT,JDeltaColor.DANGER);
-
         jDeltaBadgeCustomSecondary.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {

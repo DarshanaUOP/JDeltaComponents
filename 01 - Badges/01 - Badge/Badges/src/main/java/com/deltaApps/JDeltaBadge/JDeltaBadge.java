@@ -142,6 +142,7 @@ public class JDeltaBadge extends JPanel {
          */
         /* set colors for components */
         primaryPanel.setBackground(primaryBackgroundColor);
+        setBackground(primaryBackgroundColor);  /* set all other background  */
         secondaryPanel.setBackground(secondaryBackgroundColor);
 
         /* add text appended labels into panels */
@@ -226,8 +227,8 @@ public class JDeltaBadge extends JPanel {
      * @param primaryBackgroundColor primary's background color
      */
     public void setPrimaryBackgroundColor(JDeltaColor primaryBackgroundColor){
-        this.primaryLabel.setBackground((Color) primaryBackgroundColor);
         this.primaryPanel.setBackground((Color) primaryBackgroundColor);
+        this.setBackground((Color) primaryBackgroundColor);
     }
 
 }
