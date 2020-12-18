@@ -37,17 +37,36 @@ public class JDeltaBadge extends JPanel {
     /* This is the constructor of the class, it needs primary text and secondary test */
     // TODO - Use Constructor chaining for different parameter case (Constructor overloading)
 
-    /* C1 */
-
     /**
      * his will create a basic components with light primary background and dark primary fonts
      * with a dark secondary fonts and light secondary background
      * @param primaryText
      * @param secondaryText
      */
+    /* C1 */
     public JDeltaBadge(String primaryText,
                        String secondaryText){
-        this(primaryText,secondaryText,JDeltaColor.LIGHT,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,JDeltaColor.DARK,JDeltaColor.LIGHT,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
+        this(primaryText,secondaryText,JDeltaColor.LIGHT,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
+                JDeltaColor.DARK,JDeltaColor.LIGHT,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
+    }
+
+    /* C6 */
+    public JDeltaBadge(String primaryText,
+                       String secondaryText,
+                       JDeltaColor secondaryForegroundColor,
+                       JDeltaColor secondaryBackgroundColor){
+        this(primaryText,secondaryText,JDeltaColor.DARK,JDeltaColor.LIGHT,secondaryForegroundColor,secondaryBackgroundColor);
+    }
+
+    /* C8 */
+    public JDeltaBadge(String primaryText,
+                       String secondaryText,
+                       JDeltaColor primaryForegroundColor,
+                       JDeltaColor primaryBackgroundColor,
+                       JDeltaColor secondaryForegroundColor,
+                       JDeltaColor secondaryBackgroundColor){
+        this(primaryText,secondaryText,primaryBackgroundColor,primaryForegroundColor,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
+                secondaryBackgroundColor,secondaryForegroundColor,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
     }
 
     /* C11 */
