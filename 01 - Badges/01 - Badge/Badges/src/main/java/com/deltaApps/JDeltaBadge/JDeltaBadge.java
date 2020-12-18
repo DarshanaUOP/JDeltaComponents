@@ -162,7 +162,7 @@ public class JDeltaBadge extends JPanel {
      * @return primary text of the jDeltaBadge
      */
     public String getPrimaryText() {
-        return primaryText;
+        return primaryLabel.getText();
     }
 
     /**
@@ -170,7 +170,7 @@ public class JDeltaBadge extends JPanel {
      * @param primaryText New primary text
      */
     public void setPrimaryText(String primaryText) {
-        this.primaryText = primaryText;
+        this.primaryLabel.setText(primaryText);
     }
 
     /**
@@ -178,7 +178,7 @@ public class JDeltaBadge extends JPanel {
      * @return secondary text of the jDeltaBadge
      */
     public String getSecondaryText() {
-        return secondaryText;
+        return this.secondaryLabel.getText();
     }
 
     /**
@@ -186,7 +186,15 @@ public class JDeltaBadge extends JPanel {
      * @param secondaryText New secondary text
      */
     public void setSecondaryText(String secondaryText) {
-        this.secondaryText = secondaryText;
+        this.secondaryLabel.setText(secondaryText);
+    }
+
+    /**
+     * Can update your jDeltaButton's secondary text
+     * @param amount New secondary amount
+     */
+    public void setSecondaryText(int amount) {
+        this.secondaryLabel.setText(String.valueOf(amount));
     }
 
     /**
@@ -221,4 +229,5 @@ public class JDeltaBadge extends JPanel {
         this.primaryLabel.setBackground((Color) primaryBackgroundColor);
         this.primaryPanel.setBackground((Color) primaryBackgroundColor);
     }
+
 }
