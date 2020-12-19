@@ -159,36 +159,25 @@ public class JDeltaBadge extends JPanel {
 
     /* ----------------- getters and setters ----------------- */
 
-    /* getters and setters for JDeltaBadge panel */
-
+    /* 1. getters and setters for JDeltaBadge panel & secondary panel */
     /**
      * Get background color of the JDeltaBadge
      * @return background color
      */
     public JDeltaColor getBackgroundColor(){
-       return (JDeltaColor) super.getBackground();
+        return (JDeltaColor) super.getBackground();
     }
+
+    /**
+     * Set background color of the JDeltaBadge
+     * @param backgroundColor New background color of the JDeltaBadge
+     */
     public void setBackgroundColor(JDeltaColor backgroundColor){
         this.setBackground((Color) backgroundColor);
         this.secondaryPanel.setBackground((Color) backgroundColor);
     }
 
-    /**
-     * get primary text from the jDeltaBadge
-     * @return primary text of the jDeltaBadge
-     */
-    public String getPrimaryText() {
-        return primaryLabel.getText();
-    }
-
-    /**
-     * Can update your jDeltaButton's primary text
-     * @param primaryText New primary text
-     */
-    public void setPrimaryText(String primaryText) {
-        this.primaryLabel.setText(primaryText);
-    }
-
+    /* 2. getters and setters for JDeltaBadge's Secondary label */
     /**
      * get secondary text from the jDeltaBadge
      * @return secondary text of the jDeltaBadge
@@ -211,6 +200,58 @@ public class JDeltaBadge extends JPanel {
      */
     public void setSecondaryText(int amount) {
         this.secondaryLabel.setText(String.valueOf(amount));
+    }
+
+    /**
+     * get secondary's foreground color
+     * @return secondary's foreground color
+     */
+    public JDeltaColor getSecondaryForegroundColor(){
+        return (JDeltaColor) this.secondaryLabel.getForeground();
+    }
+
+    /**
+     * this will update your secondary foreground color
+     * @param primaryForegroundColor new secondary foreground color
+     */
+    public void setSecondaryForegroundColor(JDeltaColor primaryForegroundColor){
+        this.secondaryLabel.setForeground((Color) primaryForegroundColor);
+    }
+
+    /**
+     * this will get secondary's font object
+     * @return secondary's font object
+     */
+    public JDeltaFonts getSecondaryFont(){
+        return (JDeltaFonts) secondaryLabel.getFont();
+    }
+
+    /**
+     * this will set secondary's font object
+     * @param font new font for secondary
+     */
+    public void setSecondaryFont(JDeltaFonts font){
+        this.secondaryLabel.setFont((Font) font);
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    /* getters and setters for JDeltaBadge secondary label */
+
+    /**
+     * get primary text from the jDeltaBadge
+     * @return primary text of the jDeltaBadge
+     */
+    public String getPrimaryText() {
+        return primaryLabel.getText();
+    }
+
+    /**
+     * Can update your jDeltaButton's primary text
+     * @param primaryText New primary text
+     */
+    public void setPrimaryText(String primaryText) {
+        this.primaryLabel.setText(primaryText);
     }
 
     /**
@@ -244,22 +285,6 @@ public class JDeltaBadge extends JPanel {
     public void setPrimaryBackgroundColor(JDeltaColor primaryBackgroundColor){
         this.primaryPanel.setBackground((Color) primaryBackgroundColor);
         this.setBackground((Color) primaryBackgroundColor);
-    }
-
-    /**
-     * get primary's foreground color
-     * @return primary's foreground color
-     */
-    public JDeltaColor getSecondaryForegroundColor(){
-        return (JDeltaColor) this.secondaryLabel.getForeground();
-    }
-
-    /**
-     * this will update your primary foreground color
-     * @param primaryForegroundColor new primary foreground color
-     */
-    public void setSecondaryForegroundColor(JDeltaColor primaryForegroundColor){
-        this.secondaryLabel.setForeground((Color) primaryForegroundColor);
     }
 
     /**
