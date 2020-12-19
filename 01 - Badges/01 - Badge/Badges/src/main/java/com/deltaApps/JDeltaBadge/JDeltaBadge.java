@@ -282,20 +282,19 @@ public class JDeltaBadge extends JPanel {
     }
 
     /**
-     * get primary's background color
-     * @return primary's background color
+     * get primary's background font
+     * @return primary's background font
      */
-    public JDeltaColor getPrimaryBackgroundColor(){
-        return (JDeltaColor) this.primaryPanel.getBackground();
+    public JDeltaFonts getPrimaryBackgroundFont(){
+        return (JDeltaFonts) this.primaryPanel.getFont();
     }
 
     /**
-     * update primary's background color
-     * @param primaryBackgroundColor primary's background color
+     * update primary's background font
+     * @param primaryBackgroundFont primary's background font
      */
-    public void setPrimaryBackgroundColor(JDeltaColor primaryBackgroundColor){
-        this.primaryPanel.setBackground((Color) primaryBackgroundColor);
-        this.setBackground((Color) primaryBackgroundColor);
+    public void setPrimaryBackgroundFont(JDeltaFonts primaryBackgroundFont){
+        this.primaryPanel.setFont((Font) primaryBackgroundFont);
     }
 
 }
