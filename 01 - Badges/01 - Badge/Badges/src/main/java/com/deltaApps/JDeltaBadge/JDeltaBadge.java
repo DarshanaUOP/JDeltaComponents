@@ -159,7 +159,7 @@ public class JDeltaBadge extends JPanel {
 
     /* ----------------- getters and setters ----------------- */
 
-    /* 1. getters and setters for JDeltaBadge panel & secondary panel */
+    /* 1. getters and setters for JDeltaBadge panel & primary panel */
     /**
      * Get background color of the JDeltaBadge
      * @return background color
@@ -174,7 +174,7 @@ public class JDeltaBadge extends JPanel {
      */
     public void setBackgroundColor(JDeltaColor backgroundColor){
         this.setBackground((Color) backgroundColor);
-        this.secondaryPanel.setBackground((Color) backgroundColor);
+        this.primaryPanel.setBackground((Color) backgroundColor);
     }
 
     /* 2. getters and setters for JDeltaBadge's Secondary label */
