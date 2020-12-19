@@ -18,6 +18,12 @@ public class JDeltaBadgeHolder extends JFrame {
     /* get jDeltaBadge Component */
     private JDeltaBadge jDeltaBadgeNotification, jDeltaBadgeCustomSecondary;
 
+    /* for test get/set properties */
+    private JPanel testPanel;
+    private JLabel outputLabel,instructionLabel;
+    private GridBagConstraints gb;
+    private JDeltaBadge firstTestBadge,secondTestBadge;
+
     int clickCount = 0 ;
     /* Constructor of the class */
     public JDeltaBadgeHolder(){
@@ -28,13 +34,13 @@ public class JDeltaBadgeHolder extends JFrame {
         jDeltaBadgeNotification.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                jDeltaBadgeNotification.setPrimaryBackgroundColor(JDeltaColor.DANGER);
+                jDeltaBadgeNotification.setBackgroundColor(JDeltaColor.DANGER);
                 jDeltaBadgeNotification.setSecondaryBackgroundColor(JDeltaColor.SECONDARY);
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
-                jDeltaBadgeNotification.setPrimaryBackgroundColor(JDeltaColor.WARNING);
+                jDeltaBadgeNotification.setBackgroundColor(JDeltaColor.WARNING);
                 jDeltaBadgeNotification.setSecondaryBackgroundColor(JDeltaColor.INFO);
             }
         });
@@ -60,6 +66,12 @@ public class JDeltaBadgeHolder extends JFrame {
             }
         });
         add(jDeltaBadgeCustomSecondary);
+
+        /* test get/set properties */
+        testPanel = new JPanel(new GridBagLayout());
+        outputLabel = new JLabel("Output label");
+        instructionLabel = new JLabel("Instructions Label");
+        firstTestBadge = new JDeltaBadge();
 
     }
 }
