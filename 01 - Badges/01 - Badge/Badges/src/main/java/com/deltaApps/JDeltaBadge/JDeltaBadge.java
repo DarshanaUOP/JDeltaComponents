@@ -22,6 +22,7 @@ public class JDeltaBadge extends JPanel {
 
     /**
      * No argument constructor
+     * @since v1.0
      */
     public JDeltaBadge(){
         this("","",JDeltaColor.LIGHT,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
@@ -33,6 +34,7 @@ public class JDeltaBadge extends JPanel {
      * with a dark secondary fonts and light secondary background
      * @param primaryText Text to write as primary text
      * @param secondaryText Text to write as secondary text
+     * @since v1.0
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText){
@@ -45,6 +47,7 @@ public class JDeltaBadge extends JPanel {
      * with a dark secondary fonts and light secondary background
      * @param primaryText Text to write as primary text
      * @param amount A integer number to write as secondary text
+     * @since v1.0
      */
     public JDeltaBadge(String primaryText,
                        int amount){
@@ -58,6 +61,7 @@ public class JDeltaBadge extends JPanel {
      * @param secondaryText Text to write as primary text
      * @param secondaryForegroundColor Secondary font color
      * @param secondaryBackgroundColor Secondary background color
+     * @since v1.0
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
@@ -72,6 +76,7 @@ public class JDeltaBadge extends JPanel {
      * @param amount A integer number to write as secondary text
      * @param secondaryForegroundColor Secondary font color
      * @param secondaryBackgroundColor Secondary background color
+     * @since v1.0
      */
     public JDeltaBadge(String primaryText,
                        int amount,
@@ -88,6 +93,7 @@ public class JDeltaBadge extends JPanel {
      * @param primaryBackgroundColor Primary background color
      * @param secondaryForegroundColor Secondary font color
      * @param secondaryBackgroundColor Secondary background color
+     * @since v1.0
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
@@ -110,6 +116,7 @@ public class JDeltaBadge extends JPanel {
      * @param secondaryForegroundColor Secondary font color
      * @param secondaryFont Secondary font specifications
      * @param rounded is the JDeltaButton round in shape or not
+     * @since v1.0
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
@@ -168,6 +175,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * Get background color of the JDeltaBadge
      * @return background color
+     * @since v1.0
      */
     public JDeltaColor getBackgroundColor(){
         return (JDeltaColor) super.getBackground();
@@ -176,6 +184,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * Set background color of the JDeltaBadge
      * @param backgroundColor New background color of the JDeltaBadge
+     * @since v1.0
      */
     public void setBackgroundColor(JDeltaColor backgroundColor){
         this.setBackground((Color) backgroundColor);
@@ -186,6 +195,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * get secondary text from the jDeltaBadge
      * @return secondary text of the jDeltaBadge
+     * @since v1.0
      */
     public String getSecondaryText() {
         return this.secondaryLabel.getText();
@@ -194,6 +204,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * Can update your jDeltaButton's secondary text
      * @param secondaryText New secondary text
+     * @since v1.0
      */
     public void setSecondaryText(String secondaryText) {
         this.secondaryLabel.setText(secondaryText);
@@ -202,6 +213,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * Can update your jDeltaButton's secondary text
      * @param amount New secondary amount
+     * @since v1.0
      */
     public void setSecondaryText(int amount) {
         this.secondaryLabel.setText(String.valueOf(amount));
@@ -210,6 +222,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * get secondary's foreground color
      * @return secondary's foreground color
+     * @since v1.0
      */
     public JDeltaColor getSecondaryForegroundColor(){
         return (JDeltaColor) this.secondaryLabel.getForeground();
@@ -218,6 +231,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * this will update your secondary foreground color
      * @param primaryForegroundColor new secondary foreground color
+     * @since v1.0
      */
     public void setSecondaryForegroundColor(JDeltaColor primaryForegroundColor){
         this.secondaryLabel.setForeground((Color) primaryForegroundColor);
@@ -226,6 +240,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * this will get secondary's font object
      * @return secondary's font object
+     * @since v1.0
      */
     public JDeltaFonts getSecondaryFont(){
         return (JDeltaFonts) secondaryLabel.getFont();
@@ -234,6 +249,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * this will set secondary's font object
      * @param font new font for secondary
+     * @since v1.0
      */
     public void setSecondaryFont(JDeltaFonts font){
         this.secondaryLabel.setFont((Font) font);
@@ -243,6 +259,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * get Secondary's background color
      * @return Secondary's background color
+     * @since v1.0
      */
     public JDeltaColor getSecondaryBackgroundColor(){
         return (JDeltaColor) this.secondaryPanel.getBackground();
@@ -251,6 +268,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * update Secondary's background color
      * @param primaryBackgroundColor Secondary's background color
+     * @since v1.0
      */
     public void setSecondaryBackgroundColor(JDeltaColor primaryBackgroundColor){
         this.secondaryPanel.setBackground((Color) primaryBackgroundColor);
@@ -260,6 +278,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * get primary text from the jDeltaBadge
      * @return primary text of the jDeltaBadge
+     * @since v1.0
      */
     public String getPrimaryText() {
         return primaryLabel.getText();
@@ -268,6 +287,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * Can update your jDeltaButton's primary text
      * @param primaryText New primary text
+     * @since v1.0
      */
     public void setPrimaryText(String primaryText) {
         this.primaryLabel.setText(primaryText);
@@ -276,6 +296,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * get primary's foreground color
      * @return primary's foreground color
+     * @since v1.0
      */
     public JDeltaColor getPrimaryForegroundColor(){
         return (JDeltaColor) this.primaryLabel.getForeground();
@@ -284,6 +305,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * this will update your primary foreground color
      * @param primaryForegroundColor new primary foreground color
+     * @since v1.0
      */
     public void setPrimaryForegroundColor(JDeltaColor primaryForegroundColor){
         this.primaryLabel.setForeground((Color) primaryForegroundColor);
@@ -292,6 +314,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * get primary's font
      * @return primary's font
+     * @since v1.0
      */
     public JDeltaFonts getPrimaryFont(){
         return (JDeltaFonts) this.primaryPanel.getFont();
@@ -300,9 +323,9 @@ public class JDeltaBadge extends JPanel {
     /**
      * update primary's font
      * @param primaryFont primary's font
+     * @since v1.0
      */
     public void setPrimaryFont(JDeltaFonts primaryFont){
         this.primaryPanel.setFont((Font) primaryFont);
     }
-
 }
