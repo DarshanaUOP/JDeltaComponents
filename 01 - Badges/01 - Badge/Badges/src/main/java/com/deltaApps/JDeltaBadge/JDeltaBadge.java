@@ -4,7 +4,6 @@ import com.deltaApps.JDeltaColors.JDeltaColor;
 import com.deltaApps.JDeltaFont.JDeltaFonts;
 
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 /**
@@ -129,8 +128,7 @@ public class JDeltaBadge extends JPanel {
         /* create objects of labels */
         primaryLabel = new JLabel(primaryText);
         secondaryLabel = new JLabel(secondaryText);
-        /** Change label properties
-         */
+        /** Change label properties */
         /* set font for labels */
         primaryLabel.setFont(primaryFont);
         secondaryLabel.setFont(secondaryFont);
@@ -138,8 +136,7 @@ public class JDeltaBadge extends JPanel {
         primaryLabel.setForeground(primaryForegroundColor);
         secondaryLabel.setForeground(secondaryForegroundColor);
 
-        /** Change panel properties
-         */
+        /** Change panel properties */
         /* set colors for components */
         primaryPanel.setBackground(primaryBackgroundColor);
         setBackground(primaryBackgroundColor);  /* set all other background  */
@@ -234,7 +231,7 @@ public class JDeltaBadge extends JPanel {
         this.secondaryLabel.setFont((Font) font);
     }
 
-    /* 3 .getters and setters for JDeltaBadge's Secondary panel */
+    /* 3 . getters and setters for JDeltaBadge's Secondary panel */
     /**
      * get Secondary's background color
      * @return Secondary's background color
@@ -251,10 +248,7 @@ public class JDeltaBadge extends JPanel {
         this.secondaryPanel.setBackground((Color) primaryBackgroundColor);
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    /* getters and setters for JDeltaBadge secondary label */
-
+    /* 4 . getters and setters for JDeltaBadge's Primary label */
     /**
      * get primary text from the jDeltaBadge
      * @return primary text of the jDeltaBadge
@@ -303,6 +297,5 @@ public class JDeltaBadge extends JPanel {
         this.primaryPanel.setBackground((Color) primaryBackgroundColor);
         this.setBackground((Color) primaryBackgroundColor);
     }
-
 
 }
