@@ -285,16 +285,16 @@ public class JDeltaBadge extends JPanel {
      * get primary's font
      * @return primary's font
      */
-    public JDeltaFonts getPrimaryBackgroundFont(){
+    public JDeltaFonts getPrimaryFont(){
         return (JDeltaFonts) this.primaryPanel.getFont();
     }
 
     /**
      * update primary's font
-     * @param primaryBackgroundFont primary's font
+     * @param primaryFont primary's font
      */
-    public void setPrimaryBackgroundFont(JDeltaFonts primaryBackgroundFont){
-        this.primaryPanel.setFont((Font) primaryBackgroundFont);
+    public void setPrimaryFont(JDeltaFonts primaryFont){
+        this.primaryPanel.setFont((Font) primaryFont);
     }
 
 }
