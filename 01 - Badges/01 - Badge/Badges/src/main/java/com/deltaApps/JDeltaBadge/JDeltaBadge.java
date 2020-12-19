@@ -21,6 +21,14 @@ public class JDeltaBadge extends JPanel {
     GridBagConstraints gb = new GridBagConstraints();
 
     /**
+     * No argument constructor
+     */
+    public JDeltaBadge(){
+        this("","",JDeltaColor.LIGHT,JDeltaColor.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
+                JDeltaColor.DARK,JDeltaColor.LIGHT,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
+    }
+
+    /**
      * This will create a basic components with light primary background and dark primary fonts
      * with a dark secondary fonts and light secondary background
      * @param primaryText Text to write as primary text
