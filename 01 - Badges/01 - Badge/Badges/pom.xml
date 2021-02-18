@@ -6,7 +6,7 @@
 
     <groupId>com.deltaApps</groupId>
     <artifactId>jdeltabadges</artifactId>
-    <version>1.0.0-Pre</version>
+    <version>1.0</version>
     <!-- packaging as .jar-->
     <packaging>jar</packaging>
 
