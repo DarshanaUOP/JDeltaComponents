@@ -1,4 +1,4 @@
-package com.deltaApps.JDeltaColors;
+package com.deltaApps.utils.JDeltaColors;
 
 import java.awt.*;
 

@@ -1,6 +1,6 @@
 package JDeltaColors;
 
-import com.deltaApps.JDeltaColors.JDeltaColor;
+import com.deltaApps.utils.JDeltaColors.JDeltaColor;
 
 import javax.swing.*;
 import java.awt.*;
