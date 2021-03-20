@@ -1,7 +1,7 @@
-package com.deltaApps.JDeltaBadge;
+package com.deltaApps.components.JDeltaBadge;
 
-import com.deltaApps.JDeltaColors.JDeltaColor;
-import com.deltaApps.JDeltaFont.JDeltaFonts;
+import com.deltaApps.utils.JDeltaColors.JDeltaColor;
+import com.deltaApps.utils.JDeltaFont.JDeltaFonts;
 
 import javax.swing.*;
 import java.awt.*;
