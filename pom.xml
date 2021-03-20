@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.deltaApps</groupId>
-    <artifactId>JDeltaComponents</artifactId>
-    <version>1.0.0</version>
+    <artifactId>jdeltacomponents</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <distributionManagement>
         <repository>
@@ -23,7 +24,6 @@
     <build>
         <pluginManagement>
             <plugins>
-
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-plugin-plugin</artifactId>
