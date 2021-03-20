@@ -15,8 +15,13 @@ public class JDeltaFonts extends Font {
 
     /* constructor overloading */
 
-
-    /* Constructor */
+    /**
+     * Creates jDeltaFont object by using jdk's Font class
+     * @param name font name
+     * @param style font style
+     * @param size font size
+     * @since v1.0.0
+     */
     public JDeltaFonts(String name, int style, int size) {
         super(name, style, size);
     }
