@@ -32,6 +32,14 @@ public class JDeltaColor extends Color{
     /* DARK */
     public final static JDeltaColor DARK = new JDeltaColor(25,58,64);
 
+    /**
+     * @brief   This is the main constructor of this jDeltaColor project
+     * @param r amount of red color
+     * @param g amount of green color
+     * @param b amount of blue color
+     * @return  a jDeltaColor object
+     * @since v1.0.0
+     */
     public JDeltaColor(int r, int g, int b) {
         super(r, g, b);
     }
