@@ -2,6 +2,12 @@ package com.deltaApps.utils;
 
 import java.awt.*;
 
+/**
+ * File history
+ * 2020-12-11   - Initially created - Darshana Ariyarathna
+ * 2021-03-20   - Change structure of the project, copy and paste file from the old structure
+ */
+
 public class JDeltaFonts extends Font {
     /* FONT SIZES */
     public static int SMALL = 15;

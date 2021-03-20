@@ -5,6 +5,12 @@ import java.awt.*;
  * This class created for define particular colors for JDelta UI Components
  * references : https://getbootstrap.com/docs/4.0/components/badge/
  */
+
+/**
+ * File history
+ * 2020-12-11   - Initially created - Darshana Ariyarathna
+ * 2021-03-20   - Change structure of the project, copy and paste file from the old structure
+ */
 public class JDeltaColors extends Color{
 
     /* PRIMARY */
