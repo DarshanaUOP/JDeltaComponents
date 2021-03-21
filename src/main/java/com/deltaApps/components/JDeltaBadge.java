@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Owner : Darshana Ariyarathna. 2020-12-11
+ * Owner : Darshana Ariyarathna. Created 2020-12-11
  */
 
 /**
