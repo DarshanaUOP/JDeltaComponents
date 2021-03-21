@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Owner : Darshana Ariyarathna. 2020-12-11
+ * Owner : Darshana Ariyarathna. Created 2020-12-11
  */
 
 /**
@@ -24,7 +24,16 @@ public class JDeltaBadge extends JPanel {
     private JPanel primaryPanel,secondaryPanel;
 
     /* GridBag Constraints */
-    GridBagConstraints gb = new GridBagConstraints();
+    GridBagConstraints gb  = new GridBagConstraints();
+
+    /* Standard button types  */
+    public static final int PRIMARY_BUTTON = 0;
+    public static final int SECONDARY_BUTTON = 1;
+    public static final int SUCCESS_BUTTON = 2;
+    public static final int WARNING_BUTTON = 3;
+    public static final int INFO_BUTTON = 4;
+    public static final int LIGHT_BUTTON = 5;
+    public static final int DARK_BUTTON = 6;
 
     /**
      * No argument constructor
@@ -76,6 +85,7 @@ public class JDeltaBadge extends JPanel {
         this(primaryText,secondaryText,JDeltaColors.DARK,JDeltaColors.LIGHT,secondaryForegroundColor,secondaryBackgroundColor);
     }
 
+
     /**
      * This will create a custom colored secondary badge
      * @param primaryText Text to write as primary text
@@ -109,6 +119,68 @@ public class JDeltaBadge extends JPanel {
                        JDeltaColors secondaryBackgroundColor){
         this(primaryText,secondaryText,primaryBackgroundColor,primaryForegroundColor,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
                 secondaryBackgroundColor,secondaryForegroundColor,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
+    }
+
+    /**
+     * This constructor will create standard colored badge with the button type
+     * @param primaryText   Text to write as primary text
+     * @param secondaryText Text to write as secondary text
+     * @param buttonType    button type
+     * @since v1.0.1
+     */
+    public JDeltaBadge(String primaryText,String secondaryText,int buttonType){
+        this(primaryText,secondaryText);
+
+        JDeltaColors primaryForeground = null,primaryBackground  = null,secondaryForeground = null,secondaryBackground = null;
+
+        switch (buttonType){
+            case PRIMARY_BUTTON:
+                primaryForeground  = JDeltaColors.LIGHT;
+                primaryBackground = JDeltaColors.PRIMARY;
+                secondaryForeground = JDeltaColors.DARK;
+                secondaryBackground = JDeltaColors.LIGHT;
+                break;
+            case SECONDARY_BUTTON:
+                primaryForeground  = JDeltaColors.LIGHT;
+                primaryBackground = JDeltaColors.SECONDARY;
+                secondaryForeground = JDeltaColors.DARK;
+                secondaryBackground = JDeltaColors.LIGHT;
+                break;
+            case SUCCESS_BUTTON:
+                primaryForeground  = JDeltaColors.LIGHT;
+                primaryBackground = JDeltaColors.SUCCESS;
+                secondaryForeground = JDeltaColors.DARK;
+                secondaryBackground = JDeltaColors.LIGHT;
+                break;
+            case WARNING_BUTTON:
+                primaryForeground  = JDeltaColors.LIGHT;
+                primaryBackground = JDeltaColors.WARNING;
+                secondaryForeground = JDeltaColors.DARK;
+                secondaryBackground = JDeltaColors.LIGHT;
+                break;
+            case  INFO_BUTTON:
+                primaryForeground  = JDeltaColors.LIGHT;
+                primaryBackground = JDeltaColors.INFO;
+                secondaryForeground = JDeltaColors.DARK;
+                secondaryBackground = JDeltaColors.LIGHT;
+                break;
+            case LIGHT_BUTTON:
+                primaryForeground  = JDeltaColors.DARK;
+                primaryBackground = JDeltaColors.LIGHT;
+                secondaryForeground = JDeltaColors.LIGHT;
+                secondaryBackground = JDeltaColors.DARK;
+                break;
+            case DARK_BUTTON:
+                primaryForeground  = JDeltaColors.LIGHT;
+                primaryBackground = JDeltaColors.DARK;
+                secondaryForeground = JDeltaColors.DARK;
+                secondaryBackground = JDeltaColors.LIGHT;
+                break;
+        }
+        this.setPrimaryForegroundColor(primaryForeground);
+        this.setBackground(primaryBackground);
+        this.setSecondaryForegroundColor(secondaryForeground);
+        this.setSecondaryBackgroundColor(secondaryBackground);
     }
 
     /**
