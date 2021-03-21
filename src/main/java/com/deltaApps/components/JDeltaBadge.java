@@ -26,7 +26,7 @@ public class JDeltaBadge extends JPanel {
     /* GridBag Constraints */
     GridBagConstraints gb = new GridBagConstraints();
 
-    /* Standard button types */
+    /* Standard button types  */
     public static final int PRIMARY_BUTTON = 0;
     public static final int SECONDARY_BUTTON = 1;
     public static final int SUCCESS_BUTTON = 2;
