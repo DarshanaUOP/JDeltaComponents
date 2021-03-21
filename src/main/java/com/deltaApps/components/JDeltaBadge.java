@@ -27,13 +27,13 @@ public class JDeltaBadge extends JPanel {
     GridBagConstraints gb = new GridBagConstraints();
 
     /* Standard button types */
-    public final int PRIMARY_BUTTON = 0;
-    public final int SECONDARY_BUTTON = 1;
-    public final int SUCCESS_BUTTON = 2;
-    public final int WARNING_BUTTON = 3;
-    public final int INFO_BUTTON = 4;
-    public final int LIGHT_BUTTON = 5;
-    public final int DARK_BUTTON = 6;
+    public static final int PRIMARY_BUTTON = 0;
+    public static final int SECONDARY_BUTTON = 1;
+    public static final int SUCCESS_BUTTON = 2;
+    public static final int WARNING_BUTTON = 3;
+    public static final int INFO_BUTTON = 4;
+    public static final int LIGHT_BUTTON = 5;
+    public static final int DARK_BUTTON = 6;
 
     /**
      * No argument constructor
