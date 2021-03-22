@@ -11,7 +11,20 @@ public class JDeltaBadgeTest {
      */
     JDeltaButtonViewer jDeltaBadgeViewer = new JDeltaButtonViewer();
 
+    /**
+     * Testing constructor 1
+     */
+    @Test
+    public void TestJDeltaBadgeConstructor1(){
+        JDeltaBadge jDeltaBadge = new JDeltaBadge();
+        jDeltaBadgeViewer.showBadge();
 
+        jDeltaBadge.setPrimaryText("Primary text");
+        jDeltaBadgeViewer.setBadgeName("Badge 2");
+        jDeltaBadgeViewer.setJDeltaBadgeObj(jDeltaBadge);
+        jDeltaBadgeViewer.showBadge();
+
+    }
 }
 
 class JDeltaButtonViewer extends JFrame{
