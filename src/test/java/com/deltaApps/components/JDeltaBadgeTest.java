@@ -9,18 +9,29 @@ public class JDeltaBadgeTest {
     /**
      * JDeltaBadge viewer for use in all test cases in case of visual inspection
      */
-    JDeltaButtonViewer jDeltaBadgeViewer = new JDeltaButtonViewer();
+    JDeltaBadge jDeltaBadge = new JDeltaBadge();
+    JDeltaButtonViewer jDeltaBadgeViewer = new JDeltaButtonViewer(jDeltaBadge);
 
     /**
      * Testing constructor 1
      */
     @Test
     public void TestJDeltaBadgeConstructor1(){
-        JDeltaBadge jDeltaBadge = new JDeltaBadge();
+        /* Badge 1 */
+        jDeltaBadgeViewer.setBadgeName("Badge 1");
+        jDeltaBadgeViewer.setJDeltaBadgeObj(jDeltaBadge);
         jDeltaBadgeViewer.showBadge();
 
-        jDeltaBadge.setPrimaryText("Primary text");
+        /* Badge 2 */
+        jDeltaBadge.setPrimaryText("Badge 2");
         jDeltaBadgeViewer.setBadgeName("Badge 2");
+        jDeltaBadgeViewer.setJDeltaBadgeObj(jDeltaBadge);
+        jDeltaBadgeViewer.showBadge();
+
+        /* Badge 3 */
+        jDeltaBadge.setPrimaryText("Badge 3");
+        jDeltaBadge.setSecondaryText(3);
+        jDeltaBadgeViewer.setBadgeName("Badge 3");
         jDeltaBadgeViewer.setJDeltaBadgeObj(jDeltaBadge);
         jDeltaBadgeViewer.showBadge();
 
@@ -40,8 +51,8 @@ class JDeltaButtonViewer extends JFrame{
      * Default constructor of the JDeltaButtonViewer
      * @since v1.0.1
      */
-    public JDeltaButtonViewer(){
-        this("",null);
+    public JDeltaButtonViewer(JDeltaBadge jDeltaBadge){
+        this("D",jDeltaBadge);
     }
 
     /**
@@ -72,6 +83,7 @@ class JDeltaButtonViewer extends JFrame{
      */
     public void setBadgeName(String BadgeName){
         this.nameLabel.setText(BadgeName);
+        this.setTitle(BadgeName);
     }
 
     /**
