@@ -38,6 +38,7 @@ public class JDeltaBadge extends JPanel {
     /**
      * No argument constructor
      * @since v1.0.0
+     * @implNote constructor 1
      */
     public JDeltaBadge(){
         this("","",JDeltaColors.LIGHT,JDeltaColors.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
@@ -50,6 +51,7 @@ public class JDeltaBadge extends JPanel {
      * @param primaryText Text to write as primary text
      * @param secondaryText Text to write as secondary text
      * @since v1.0.0
+     * @implNote constructor 2
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText){
@@ -63,6 +65,7 @@ public class JDeltaBadge extends JPanel {
      * @param primaryText Text to write as primary text
      * @param amount A integer number to write as secondary text
      * @since v1.0.0
+     * @implNote constructor 3
      */
     public JDeltaBadge(String primaryText,
                        int amount){
@@ -77,6 +80,7 @@ public class JDeltaBadge extends JPanel {
      * @param secondaryForegroundColor Secondary font color
      * @param secondaryBackgroundColor Secondary background color
      * @since v1.0.0
+     * @implNote constructor 4
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
@@ -93,6 +97,7 @@ public class JDeltaBadge extends JPanel {
      * @param secondaryForegroundColor Secondary font color
      * @param secondaryBackgroundColor Secondary background color
      * @since v1.0.0
+     * @implNote constructor 6
      */
     public JDeltaBadge(String primaryText,
                        int amount,
@@ -110,6 +115,7 @@ public class JDeltaBadge extends JPanel {
      * @param secondaryForegroundColor Secondary font color
      * @param secondaryBackgroundColor Secondary background color
      * @since v1.0.0
+     * @implNote constructor 7
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
@@ -127,6 +133,7 @@ public class JDeltaBadge extends JPanel {
      * @param secondaryText Text to write as secondary text
      * @param buttonType    button type
      * @since v1.0.1
+     * @implNote constructor 8
      */
     public JDeltaBadge(String primaryText,String secondaryText,int buttonType){
         this(primaryText,secondaryText);
@@ -195,6 +202,7 @@ public class JDeltaBadge extends JPanel {
      * @param secondaryFont Secondary font specifications
      * @param rounded is the JDeltaButton round in shape or not
      * @since v1.0.0
+     * @implNote constructor 9
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText,
