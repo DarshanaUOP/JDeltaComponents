@@ -55,8 +55,7 @@ public class JDeltaBadge extends JPanel {
      */
     public JDeltaBadge(String primaryText,
                        String secondaryText){
-        this(primaryText,secondaryText,JDeltaColors.LIGHT,JDeltaColors.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,
-                JDeltaColors.DARK,JDeltaColors.LIGHT,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
+        this(primaryText,secondaryText,JDeltaColors.LIGHT,JDeltaColors.DARK,JDeltaFonts.JDELTA_FONTS_ARIAL_S,JDeltaColors.DARK,JDeltaColors.LIGHT,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
     }
 
     /**
@@ -214,8 +213,13 @@ public class JDeltaBadge extends JPanel {
                        JDeltaFonts secondaryFont,
                        boolean rounded /* TODO - Implement this  */
     ){
-        this.primaryText = primaryText;
-        this.secondaryText = secondaryText;
+//        this.primaryText = primaryText;
+//        this.secondaryText = secondaryText;
+
+        System.out.println("pass");
+        System.out.println("Primary text - " + primaryText);
+        System.out.println("Secondary text - " + secondaryText);
+
 
         // TODO - Please change this layout later
         /* set layout as FlowLayout */
@@ -227,7 +231,9 @@ public class JDeltaBadge extends JPanel {
         secondaryPanel = new JPanel();
 
         /* create objects of labels */
-        primaryLabel = new JLabel(primaryText);
+        primaryLabel = new JLabel();
+        primaryLabel.setText(primaryText);
+
         secondaryLabel = new JLabel(secondaryText);
         /** Change label properties */
         /* set font for labels */
