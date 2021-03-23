@@ -1,5 +1,7 @@
 package com.deltaApps.components;
 
+import com.deltaApps.utils.JDeltaColors;
+import com.deltaApps.utils.JDeltaFonts;
 import org.testng.annotations.Test;
 
 import javax.swing.*;
@@ -14,6 +16,7 @@ public class JDeltaBadgeTest {
 
     /**
      * Testing constructor 1
+     * @since v1.0.1
      */
     @Test
     public void TestJDeltaBadgeConstructor1(){
@@ -35,6 +38,23 @@ public class JDeltaBadgeTest {
         jDeltaBadgeViewer.setJDeltaBadgeObj(jDeltaBadge);
         jDeltaBadgeViewer.showBadge();
 
+    }
+
+    @Test
+    public void TestJDeltaBadgeConstructor2(){
+        JDeltaBadge jDeltaBadge2 = new JDeltaBadge("Notifications" , "2");
+        jDeltaBadgeViewer.setJDeltaBadgeObj(jDeltaBadge2);
+        jDeltaBadgeViewer.setBadgeName("Test constructor 2");
+        jDeltaBadgeViewer.showBadge();
+    }
+
+    @Test
+    public void TestJDeltaBadgeConstructor9(){
+        String pt = "My Badge";
+        JDeltaBadge deltaBadge9 = new JDeltaBadge(pt,"9+", JDeltaColors.PRIMARY,JDeltaColors.SECONDARY, JDeltaFonts.JDELTA_FONTS_ARIAL_S,JDeltaColors.SECONDARY,JDeltaColors.PRIMARY,JDeltaFonts.JDELTA_FONTS_ARIAL_S,false);
+        jDeltaBadgeViewer.setJDeltaBadgeObj(deltaBadge9);
+        jDeltaBadgeViewer.setBadgeName("Test constructor 9");
+        jDeltaBadgeViewer.showBadge();
     }
 }
 
@@ -64,12 +84,12 @@ class JDeltaButtonViewer extends JFrame{
     public JDeltaButtonViewer(String badgeName,JDeltaBadge badge){
 
         nameLabel.setText(badgeName);
-        jDeltaBadgeObj = badge;
+//        jDeltaBadgeObj = badge;
 
         backgroundPanel = new JPanel(new FlowLayout());
 
         backgroundPanel.add(nameLabel);
-        backgroundPanel.add(jDeltaBadgeObj);
+        backgroundPanel.add(badge);
 
         add(backgroundPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
