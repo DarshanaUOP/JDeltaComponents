@@ -1,5 +1,5 @@
 # JDeltaComponents
-A java layout framework for swing based UIs
+A java layout framework/library for swing based UIs
 
 ## How to use `jDeltaComponents`
 This framework is designed for use in GUI development purposes. 
