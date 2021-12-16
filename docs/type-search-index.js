@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.deltaApps.components","l":"JDeltaBadge"},{"p":"com.deltaApps.utils","l":"JDeltaColors"},{"p":"com.deltaApps.utils","l":"JDeltaFonts"}]
